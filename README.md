@@ -27,7 +27,7 @@ Then use the label "nsdi19" to include conference info in the `inproceedings` en
 
 3. Include it in your project's main file with the line:
 ```
-\bibliography{<your refs here>,**proceedings**}
+\bibliography{<your refs here>,proceedings}
 ```
 
 4. Make this more useful for everyone by adding conferences that aren't already there!
