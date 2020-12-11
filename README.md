@@ -1,4 +1,6 @@
-# refs
+# bibliography!
+
+A list of conference proceedings in/around distributed systems that are uniformly formatted for good-looking references sections. 
 
 To use this file in a LaTeX project: 
 
