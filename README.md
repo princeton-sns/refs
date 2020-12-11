@@ -1,8 +1,8 @@
 # bibliography!
 
-A list of conference proceedings in/around distributed systems that are uniformly formatted for good-looking references sections. 
+`proceedings.bib` is a list of conference proceedings in/around distributed systems that are uniformly formatted for good-looking references sections. 
 
-To use this file in a LaTeX project: 
+## To use this file in a LaTeX project: 
 
 1. Copy it to your project.
 
@@ -34,3 +34,12 @@ Then use the label "nsdi19" to include conference info in the `inproceedings` en
 
 4. Make this more useful for everyone by adding conferences that aren't already there!
 
+## Note
+Bibtex will try to be fancy and condense redundant proceedings citations into a single, separate entry that individual entries will reference. If you don't want this behavior, you need to set the `min-crossrefs` command line option in bibtex to something large, like 20. 
+
+If you use latexmk, you can do this by adding the following line to your latexmkrc file:
+```
+$bibtex = "bibtex -min-crossrefs=20";
+```
+
+Overleaf uses a [default latexmkrc](https://www.overleaf.com/learn/how-to/How_does_Overleaf_compile_my_project%3F) for all projects unless the user includes one. So, if you use Overleaf, you can copy the default latexmkrc into a file with the same name, add the above line, and add it to your project. 
